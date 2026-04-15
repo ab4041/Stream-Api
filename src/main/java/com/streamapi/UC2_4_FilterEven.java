@@ -4,18 +4,18 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class UC2_3_CollectList {
+public class UC2_4_FilterEven {
 
     public static void main(String[] args) {
 
         List<Integer> numbers =
-                Arrays.asList(1,2,3,4,5);
+                Arrays.asList(1,2,3,4,5,6);
 
-        List<Integer> doubledList =
+        List<Integer> evenNumbers =
                 numbers.stream()
-                        .map(n -> n * 2)
+                        .filter(n -> n % 2 == 0)
                         .collect(Collectors.toList());
 
-        System.out.println(doubledList);
+        System.out.println(evenNumbers);
     }
 }
