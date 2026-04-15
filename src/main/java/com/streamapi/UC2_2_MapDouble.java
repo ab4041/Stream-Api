@@ -3,7 +3,7 @@ package com.streamapi;
 import java.util.Arrays;
 import java.util.List;
 
-public class UC2_1_StreamIteration {
+public class UC2_2_MapDouble {
 
     public static void main(String[] args) {
 
@@ -11,6 +11,7 @@ public class UC2_1_StreamIteration {
                 Arrays.asList(1,2,3,4,5);
 
         numbers.stream()
+                .map(n -> n * 2)
                 .forEach(System.out::println);
     }
 }
